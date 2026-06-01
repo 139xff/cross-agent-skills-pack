@@ -1,0 +1,10 @@
+/backups/
+/claude-skills/
+/claude-skills-disabled/
+/config/skills.json
+/reports/
+/skills/
+/skills-disabled/
+/vendor/
+*.tmp
+Thumbs.db
