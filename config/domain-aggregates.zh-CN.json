@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "language": "zh-CN",
+  "strategy": "domain-router",
+  "description": "Domain routers keep original skills as focused modules and expose a smaller set of Chinese-labeled entry points.",
+  "aggregates": {
+    "ai-image-generation": {
+      "displayNameZh": "AI绘图",
+      "mode": "auto",
+      "modules": [
+        "baoyu-image-gen",
+        "gemini-image-gen",
+        "baoyu-danger-gemini-web"
+      ]
+    },
+    "academic-research": {
+      "displayNameZh": "学术研究",
+      "mode": "manual",
+      "modules": [
+        "academic-paper",
+        "academic-paper-reviewer",
+        "academic-pipeline",
+        "deep-research"
+      ]
+    },
+    "social-publishing": {
+      "displayNameZh": "社媒发布",
+      "mode": "manual",
+      "modules": [
+        "baoyu-post-to-wechat",
+        "baoyu-post-to-weibo",
+        "baoyu-post-to-x"
+      ]
+    },
+    "frontend-design-router": {
+      "displayNameZh": "前端设计",
+      "mode": "auto",
+      "modules": [
+        "frontend-design",
+        "ui-ux-pro-max",
+        "web-artifacts-builder",
+        "webapp-testing"
+      ]
+    },
+    "debugging": {
+      "displayNameZh": "故障排查",
+      "mode": "auto",
+      "modules": [
+        "diagnose",
+        "systematic-debugging"
+      ]
+    },
+    "skill-development": {
+      "displayNameZh": "技能开发",
+      "mode": "auto",
+      "modules": [
+        "skill-creator",
+        "write-a-skill",
+        "writing-skills"
+      ]
+    },
+    "test-driven-development-router": {
+      "displayNameZh": "测试驱动开发",
+      "mode": "auto",
+      "modules": [
+        "tdd",
+        "test-driven-development"
+      ]
+    },
+    "parallel-agent-development": {
+      "displayNameZh": "多代理协作",
+      "mode": "auto",
+      "modules": [
+        "dispatching-parallel-agents",
+        "subagent-driven-development"
+      ]
+    }
+  }
+}

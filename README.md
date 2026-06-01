@@ -101,6 +101,19 @@ skill discovery reads descriptions, so enabled skills can use the Chinese
 labels as semantic routing keywords. Disabled skills still require explicit
 enablement before they become discoverable by generated agent views.
 
+## Domain Routers
+
+`config/domain-aggregates.zh-CN.json` documents optional Chinese-labeled domain
+routers. A domain router is a generated skill with a small routing table and a
+`modules/` directory containing focused skill snapshots. It reduces top-level
+skill discovery noise without deleting the original canonical skills.
+
+Use an ASCII slug for the portable canonical directory and frontmatter `name`.
+Store the Chinese shared label in `agents/openai.yaml` as `display_name` and in
+the router description as a semantic keyword. This keeps compatibility with
+agents that require normalized ASCII identifiers while presenting Chinese
+entry names to users.
+
 ## Adopt Existing Agent Directories
 
 Synchronization preserves an existing ordinary directory when it occupies a
